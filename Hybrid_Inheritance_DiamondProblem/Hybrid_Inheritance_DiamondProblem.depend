@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1726395948 source:d:\c++_in_class\hybrid_inheritance_diamondproblem\main.cpp
+	<iostream>
+	<bits/stdc++.h>
+
