@@ -61,11 +61,12 @@ Virtual Inheritance
 
 Scenario in hybrid inheritance
      A
-   /   \
+   /   \     Hierarchial
  B1     B2
-   \   /
+   \   /     Multiple
      C
 
+Combination of hierarchial and multiple inheritance
 Hybrid inheritance is a combination of multiple and multi level inheritance.
 
 Obj should have four int a,b1,b2 and c so it should have size 16 bytes
@@ -127,6 +128,24 @@ Copy code
 C
 ├── A (shared Base)   //points to the function using address in the vtable of each class. address is same
 └── B (shared Base)
+
+C:
+a
+b1
+a
+b2
+c
+
+which a to access from the object of class C creates ambiguity problem
+This creates ambiguity problem.
+
+ When we inherit a class virtually, compiler creates share able
+ object of base class. Each class which inherits base class
+ virtually, contains the address of share able class. In this case
+ compiler will create a share able object of class A. 4 bytes extra
+ memory is due to this only.
+
+Pointer contains 8 bytes in 64 bit operating system.
 
 
 */

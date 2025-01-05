@@ -23,7 +23,6 @@ public:
     ~Derived() {
         cout << "Derived class destructor called" << endl;
     }
-
 };
 
 int main() {
@@ -37,7 +36,7 @@ When a derived class object is created, the base class
 constructor is executed first, followed by the derived
 class constructor.
 
-If there are multiple levels of inheritance, the constructors
+ If there are multiple levels of inheritance, the constructors
  are executed in the order from the base class to the
  most derived class.
 
@@ -59,11 +58,11 @@ reverse inheritance order, from the most derived class
 to the base class.
 
 When an object is destroyed, its derived class resources are typically more specialized and dependent on the base class resources. If the base class destructor were called first, the derived class members could potentially reference resources that no longer exist, leading to undefined behavior or crashes.
+no longer exist and creates a dangling pointer.
 
 Destroying the derived class first ensures that it has fully released any resources dependent on the base classes, so the base classes can be safely destroyed afterward.
 
 If the base class destructor ran first, the base class resources would be released before the derived class could free its allocated memory, potentially leading to memory leaks or invalid memory access.
-
 
 */
 

@@ -11,7 +11,7 @@ void Number(int value)
       if(value > 0) throw value; // int
     else
       if(value < 0) throw 1.0; // double
-    cout<<"End of try block\n";
+    cout<<"End of try block\n"; //runs when there is no error
   }
   catch (char ch)
   {

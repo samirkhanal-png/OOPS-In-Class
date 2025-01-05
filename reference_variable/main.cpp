@@ -41,7 +41,11 @@ reference.
 
 Reference variable always refers to the single variable.
 
+Dynamically allocate array and initialize it at the same time
+new int[size]{1,2,3}
 
+Dynamically allocate memory and assign it a variable at the same time
+new int(value)
 
 */
 

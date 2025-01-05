@@ -33,7 +33,9 @@ The throw; statement is used without an argument, which rethrows the same except
 (i.e., the integer exception 0) without any modification.
 
 The exception is first caught inside Division(), handled partially
-(e.g., printed), and then rethrown. The main() function then fully
+(e.g., printed), and then rethrown.
+
+The main() function then fully
 handles the exception (prints the error message), and the program
 continues execution.
 

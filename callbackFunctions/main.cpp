@@ -21,4 +21,6 @@ Function pointers can be passed as parameters in function calls and can be retur
 
 Key Point: f2p(10, 9) and (*f2p)(10, 9) are functionally equivalent. The dereferencing is implied if you directly call the function using the function pointer.
 
+Array of function pointers are written this way (*funp[3])()
+
 */

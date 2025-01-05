@@ -2,7 +2,7 @@
 
 using namespace std;
 
-void Number(int value) throw( int, char, double)
+void Number(int value) //throw( int, char, double)
 {
   if ( value == 0) throw 'x'; //char
   else
@@ -32,10 +32,14 @@ int main()
   return 0;
 }
 /*
+
+Note:We can simply throw from the function definition without any throw type list also
+
 Restricting exceptions
 
 
-We can restrict a function to throw only certain specified exceptions outside of it. This is accomplished by adding a throw list clause to the function definition. The general form of this as shown here:
+We can restrict a function to throw only certain specified exceptions outside of it.
+This is accomplished by adding a throw list clause to the function definition. The general form of this as shown here:
 
 return_type Function_Name ( arg-list) throw (type-list)
 {

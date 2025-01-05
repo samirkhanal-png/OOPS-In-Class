@@ -3,7 +3,7 @@ using namespace std;
 
 class Base {
 public:
-    virtual void display() { cout << "Base object" << endl; } //late binding binding during runtime
+    virtual void display() { cout << "Base object" << endl; } //late binding during runtime
 };
 
 class Derived : public Base {
